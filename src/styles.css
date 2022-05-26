@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input#id:invalid {
+  border: 1px solid red;
+}
+
+input#email:invalid {
+  border: 1px solid red;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  max-width: 300px;
+}
+
+.navigation-item::before {
+  content: "○";
+}
+
+.navigation-item--active::before {
+  content: "●";
+}
+
+.navigation-button--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
